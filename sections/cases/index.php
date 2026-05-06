@@ -32,7 +32,6 @@
     <!-- Cases carousel grid -->
     <div class="cases-carousel">
       <div class="cases-carousel__grid">
-
         <?php
         $cases = [
           [
@@ -61,7 +60,7 @@
             'country' => 'Из Китая',
             'flag_src' => 'images/china-flag.svg',
             'car_name' => 'Toyota Camry 2023',
-            'image_src' => 'sections/cases/images/toyota_сamry.png',
+            'image_src' => 'sections/cases/images/toyota_camry.png',
             'price_russia' => '3 900 000 ₽',
             'price_brought' => '3 050 000 ₽',
             'savings' => '850 000 ₽',
