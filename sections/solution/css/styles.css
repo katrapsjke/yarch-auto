@@ -85,8 +85,8 @@
 .solution-steps__grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  column-gap: var(--space-4);
-  row-gap: var(--space-5);
+  column-gap: var(--space-3);
+  row-gap: var(--space-3);
 }
 
 .solution-steps__grid .solution-step {

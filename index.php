@@ -27,6 +27,7 @@
     <?php include 'sections/hero/index.php'; ?>
     <?php include 'sections/pain/index.php'; ?>
     <?php include 'sections/solution/index.php'; ?>
+    <?php include 'sections/cases/index.php'; ?>
 
   </body>
 </html>

@@ -1,0 +1,465 @@
+/* ==============================================
+   SECTION: CASES — Styles
+   ============================================== */
+
+.section-cases {
+  background: var(--color-bg-default);
+}
+
+/* ---- Header with carousel controls ---- */
+.cases-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.cases-header__content {
+  flex: 1;
+  max-width: 720px;
+}
+
+.cases-header__subtitle {
+  margin-top: var(--space-4);
+  color: var(--color-text-secondary);
+  max-width: 680px;
+}
+
+/* ---- Carousel navigation buttons ---- */
+.cases-nav {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cases-nav__btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.cases-nav__btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(0, 133, 255, 0.24);
+}
+
+.cases-nav__btn:active {
+  transform: scale(0.96);
+}
+
+/* ---- Cases carousel grid ---- */
+.cases-carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 12px;
+}
+
+.cases-carousel__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+/* ---- Case card ---- */
+.case-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-l);
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--color-border-default);
+  transition: box-shadow 200ms ease;
+}
+
+.case-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.case-card__header {
+  padding: var(--space-3) var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+/* ---- Case badge ---- */
+.case-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(151, 71, 255, 0.08);
+  border-radius: 999px;
+}
+
+.case-badge__icon {
+  flex-shrink: 0;
+  width: 20px;
+}
+
+.case-badge__text {
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+/* ---- Case image ---- */
+.case-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--color-bg-subtle);
+}
+
+.case-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 300ms ease;
+}
+
+.case-card:hover .case-card__image img {
+  transform: scale(1.04);
+}
+
+/* ---- Case body ---- */
+.case-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-3) var(--space-2);
+  gap: var(--space-4);
+}
+
+.case-card__title {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.28;
+  color: var(--color-text-primary);
+}
+
+/* ---- Pricing row ---- */
+.case-card__pricing {
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border-default);
+}
+
+.pricing-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+.pricing-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pricing-label {
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.pricing-value {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+.pricing-item:nth-child(n + 2) .pricing-value {
+  transition: transform 180ms ease, color 180ms ease;
+  transform-origin: left center;
+}
+
+.case-card:hover .pricing-item:nth-child(2) .pricing-value {
+  transform: translateY(1px) scale(1.2);
+  color: var(--color-primary-blue);
+}
+
+.case-card:hover .pricing-item:nth-child(3) .pricing-value {
+  transform: translateY(1px) scale(1.2);
+}
+
+.pricing-value--savings {
+  color: var(--color-primary-purple);
+}
+
+/* ---- Specs row ---- */
+.case-card__specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border-default);
+  margin-top: auto;
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spec-item svg {
+  flex-shrink: 0;
+  color: var(--color-primary-purple);
+}
+
+.spec-item img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.spec-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.spec-label {
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.spec-value {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+/* ---- Bottom CTA section ---- */
+.cases-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+  padding: var(--space-7) var(--space-6);
+  background: rgba(151, 71, 255, 0.04);
+  border-radius: var(--radius-l);
+}
+
+.cases-cta__content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.cases-cta__icon {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cases-cta__icon svg {
+  color: var(--color-primary-purple);
+}
+
+.cases-cta__title {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+}
+
+.cases-cta__subtitle {
+  margin-top: 8px;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  color: var(--color-text-secondary);
+}
+
+.cases-cta__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  justify-self: end;
+}
+
+/* ============================================== */
+/* RESPONSIVE: 1240px (tablet) */
+/* ============================================== */
+@media (max-width: 1240px) {
+  .cases-carousel__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+
+  .cases-header {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .cases-nav {
+    align-self: flex-start;
+  }
+}
+
+/* ============================================== */
+/* RESPONSIVE: 980px (mid-tablet) */
+/* ============================================== */
+@media (max-width: 980px) {
+  .cases-carousel__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .cases-cta {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    padding: var(--space-6);
+  }
+
+  .cases-cta__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cases-cta__btn {
+    justify-self: center;
+    width: 100%;
+  }
+
+  .pricing-row {
+    gap: var(--space-2);
+  }
+
+  .pricing-label {
+    font-size: 12px;
+  }
+
+  .pricing-value {
+    font-size: 16px;
+  }
+}
+
+/* ============================================== */
+/* RESPONSIVE: 680px (mobile) */
+/* ============================================== */
+@media (max-width: 680px) {
+  .section-cases {
+    padding-block: var(--space-7);
+  }
+
+  .cases-header {
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+  }
+
+  .cases-header__content h2 {
+    font-size: var(--text-h2-mobile);
+  }
+
+  .cases-header__subtitle {
+    font-size: var(--text-body-mobile);
+  }
+
+  .cases-nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+
+  .cases-nav__btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cases-carousel__grid {
+    gap: var(--space-3);
+  }
+
+  .case-card {
+    border-radius: var(--radius-m);
+  }
+
+  .case-card__header {
+    padding: var(--space-3);
+  }
+
+  .case-card__body {
+    padding: var(--space-3);
+    gap: var(--space-3);
+  }
+
+  .case-card__title {
+    font-size: 18px;
+  }
+
+  .case-card__image {
+    aspect-ratio: 1 / 1;
+  }
+
+  .case-card__specs {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .pricing-label {
+    font-size: 11px;
+  }
+
+  .pricing-value {
+    font-size: 15px;
+  }
+
+  .cases-cta {
+    padding: var(--space-5);
+    border-radius: var(--radius-m);
+  }
+
+  .cases-cta__icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .cases-cta__title {
+    font-size: 24px;
+  }
+
+  .cases-cta__subtitle {
+    font-size: var(--text-body-mobile);
+  }
+
+  .cases-cta__btn {
+    width: 100%;
+    font-size: 15px;
+    height: 48px;
+  }
+
+  .cases-nav__btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
