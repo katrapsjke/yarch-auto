@@ -22,14 +22,8 @@
         </div>
       </div>
 
-      <div class="pain-top__image" aria-hidden="true">
-        <div class="pain-car-wrap">
-          <div class="pain-car-placeholder">
-            <svg class="pain-car-question" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="Manrope, sans-serif" font-size="64" font-weight="700" fill="rgba(151,71,255,0.18)">?</text>
-            </svg>
-          </div>
-        </div>
+      <div class="pain-top__image">
+        <img src="sections/pain/images/car.png" alt="Car" class="pain-car-image">
       </div>
     </div>
 
