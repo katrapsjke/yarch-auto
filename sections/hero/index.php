@@ -1,4 +1,5 @@
 <!-- ===== SECTION: HERO ===== -->
+<link rel="stylesheet" href="sections/hero/css/styles.css">
 <section class="section-hero" id="hero">
   <div class="hero-bg">
     <img

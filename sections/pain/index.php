@@ -1,4 +1,5 @@
 <!-- ===== SECTION: PAIN ===== -->
+<link rel="stylesheet" href="sections/pain/css/styles.css">
 <section class="section section-pain" id="pain">
   <div class="container-site">
 

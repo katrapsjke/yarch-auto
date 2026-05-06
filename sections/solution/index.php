@@ -1,4 +1,5 @@
 <!-- ===== SECTION: SOLUTION ===== -->
+<link rel="stylesheet" href="sections/solution/css/styles.css">
 <section class="section section-solution" id="solution">
   <div class="container-site">
     <div class="solution-head">
