@@ -28,6 +28,7 @@
     <?php include 'sections/pain/index.php'; ?>
     <?php include 'sections/solution/index.php'; ?>
     <?php include 'sections/cases/index.php'; ?>
+    <?php include 'sections/countries/index.php'; ?>
 
   </body>
 </html>

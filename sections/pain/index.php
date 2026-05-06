@@ -42,7 +42,7 @@
               <line x1="14" y1="30" x2="26" y2="30" stroke="#9747FF" stroke-width="1.4" stroke-linecap="round"/>
             </svg>
           </div>
-          <p class="pain-points__label">Нет понимания<br />итоговой стоимости</p>
+          <p class="pain-points__label">Итоговая цена постоянно<br />меняется в процессе</p>
         </li>
 
         <li class="pain-points__item">
