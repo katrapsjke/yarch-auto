@@ -37,8 +37,9 @@
 /* ---- Pain points row ---- */
 .pain-points {
   margin-top: var(--space-7);
-  padding-top: var(--space-6);
+  padding: var(--space-6) 0;
   border-top: 1px solid var(--color-border-default);
+  border-bottom: 1px solid var(--color-border-default);
 }
 
 .pain-points__list {
@@ -75,8 +76,6 @@
 /* ---- Closing statement ---- */
 .pain-statement {
   margin-top: var(--space-7);
-  padding-top: var(--space-6);
-  border-top: 1px solid var(--color-border-default);
   text-align: center;
 }
 
