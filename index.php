@@ -21,6 +21,7 @@
 
     <!-- Page styles -->
     <link rel="stylesheet" href="css/sections.css" />
+
   </head>
   <body>
 
@@ -32,5 +33,5 @@
     <?php include 'sections/seo/index.php'; ?>
     <?php include 'sections/faq/index.php'; ?>
 
-  </body>
+    </body>
 </html>
