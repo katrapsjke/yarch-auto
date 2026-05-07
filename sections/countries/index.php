@@ -109,7 +109,7 @@
 
           <ul class="countries-card__meta">
             <li class="countries-meta-item">
-              <span>Аукционы США Copart / IAAI</span>
+              <span>Аукционы США</span>
             </li>
             <li class="countries-meta-item">
               <span>Большой выбор</span>

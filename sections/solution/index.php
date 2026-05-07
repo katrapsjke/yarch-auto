@@ -26,7 +26,64 @@
         </div>
       </div>
 
-      <div class="solution-pillars card">
+      <div class="solution-steps">
+        <div class="solution-steps__grid">
+          <article class="solution-step card">
+            <img src="sections/solution/images/1.jpg" alt="Консультация и подбор" class="solution-step__media">
+            <div class="solution-step__body">
+              <span class="solution-step__num">1</span>
+              <h4 class="solution-step__title text-gradient">Консультация и подбор</h4>
+              <p class="solution-step__text">Оставляете заявку, подбираем лучшие варианты под ваш бюджет и задачи.</p>
+            </div>
+          </article>
+
+          <article class="solution-step card">
+            <img src="sections/solution/images/2.jpg" alt="Фиксация стоимости" class="solution-step__media">
+            <div class="solution-step__body">
+              <span class="solution-step__num">2</span>
+              <h4 class="solution-step__title text-gradient">Фиксация стоимости</h4>
+              <p class="solution-step__text">Заключаем договор и заранее рассчитываем итоговую стоимость без скрытых расходов.</p>
+            </div>
+          </article>
+
+          <article class="solution-step card">
+            <img src="sections/solution/images/3.jpg" alt="Проверка и согласование" class="solution-step__media">
+            <div class="solution-step__body">
+              <span class="solution-step__num">3</span>
+              <h4 class="solution-step__title text-gradient">Проверка и согласование</h4>
+              <p class="solution-step__text">Показываем реальные варианты с фото и видео, проверяем и согласовываем с вами.</p>
+            </div>
+          </article>
+
+          <article class="solution-step card">
+            <img src="sections/solution/images/4.jpg" alt="Покупка и доставка" class="solution-step__media">
+            <div class="solution-step__body">
+              <span class="solution-step__num">4</span>
+              <h4 class="solution-step__title text-gradient">Покупка и доставка</h4>
+              <p class="solution-step__text">Выкупаем автомобиль и организуем логистику с полным контролем сроков.</p>
+            </div>
+          </article>
+
+          <article class="solution-step card">
+            <img src="sections/solution/images/5.jpg" alt="Оформление и передача" class="solution-step__media">
+            <div class="solution-step__body">
+              <span class="solution-step__num">5</span>
+              <h4 class="solution-step__title text-gradient">Оформление и передача</h4>
+              <p class="solution-step__text">Проходим таможню, оформляем документы и передаём автомобиль вам.</p>
+            </div>
+          </article>
+
+          <article class="solution-step solution-step--cta card">
+            <div class="solution-step__body solution-step__body--cta">
+              <h4 class="solution-step__title solution-step__title text-gradient--cta">Рассчитаем стоимость автомобиля под ваш бюджет</h4>
+              <p class="solution-step__text solution-step__text--cta">Подберём варианты, посчитаем все расходы и покажем итоговую цену ещё до начала сделки.</p>
+              <button class="btn-primary solution-cta__button">Рассчитать стоимость</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+            <div class="solution-pillars card">
         <article class="solution-pillar">
           <span class="solution-pillar__icon" aria-hidden="true">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,79 +117,6 @@
           <h3 class="solution-pillar__title">100% сопровождение</h3>
           <p class="solution-pillar__text">От подбора до передачи автомобиля вам в руки</p>
         </article>
-      </div>
-
-      <div class="solution-steps">
-        <h3 class="h3">Как это работает:</h3>
-
-        <div class="solution-steps__grid">
-          <article class="solution-step card">
-            <img src="sections/solution/images/1.jpg" alt="Консультация и подбор" class="solution-step__media">
-            <div class="solution-step__body">
-              <span class="solution-step__num">1</span>
-              <h4 class="solution-step__title">Консультация и подбор</h4>
-              <p class="solution-step__text">Оставляете заявку, подбираем лучшие варианты под ваш бюджет и задачи.</p>
-            </div>
-          </article>
-
-          <article class="solution-step card">
-            <img src="sections/solution/images/2.jpg" alt="Фиксация стоимости" class="solution-step__media">
-            <div class="solution-step__body">
-              <span class="solution-step__num">2</span>
-              <h4 class="solution-step__title">Фиксация стоимости</h4>
-              <p class="solution-step__text">Заключаем договор и заранее рассчитываем итоговую стоимость без скрытых расходов.</p>
-            </div>
-          </article>
-
-          <article class="solution-step card">
-            <img src="sections/solution/images/3.jpg" alt="Проверка и согласование" class="solution-step__media">
-            <div class="solution-step__body">
-              <span class="solution-step__num">3</span>
-              <h4 class="solution-step__title">Проверка и согласование</h4>
-              <p class="solution-step__text">Показываем реальные варианты с фото и видео, проверяем и согласовываем с вами.</p>
-            </div>
-          </article>
-
-          <article class="solution-step card">
-            <img src="sections/solution/images/4.jpg" alt="Покупка и доставка" class="solution-step__media">
-            <div class="solution-step__body">
-              <span class="solution-step__num">4</span>
-              <h4 class="solution-step__title">Покупка и доставка</h4>
-              <p class="solution-step__text">Выкупаем автомобиль и организуем логистику с полным контролем сроков.</p>
-            </div>
-          </article>
-
-          <article class="solution-step card">
-            <img src="sections/solution/images/5.jpg" alt="Оформление и передача" class="solution-step__media">
-            <div class="solution-step__body">
-              <span class="solution-step__num">5</span>
-              <h4 class="solution-step__title">Оформление и передача</h4>
-              <p class="solution-step__text">Проходим таможню, оформляем документы и передаём автомобиль вам.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="solution-cta card">
-        <div class="solution-cta__left">
-          <span class="solution-cta__icon" aria-hidden="true">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 13L6.8 8.8C7.1 8.1 7.8 7.6 8.6 7.6H15.4C16.2 7.6 16.9 8.1 17.2 8.8L19 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="4" y="13" width="16" height="5" rx="1.5" stroke="currentColor" stroke-width="1.6"/>
-              <circle cx="7.5" cy="18" r="1.8" stroke="currentColor" stroke-width="1.6"/>
-              <circle cx="16.5" cy="18" r="1.8" stroke="currentColor" stroke-width="1.6"/>
-            </svg>
-          </span>
-          <div>
-            <h3 class="solution-cta__title">Рассчитаем стоимость автомобиля под ваш бюджет</h3>
-            <p class="solution-cta__text">Подберём варианты, посчитаем все расходы и покажем итоговую цену ещё до начала сделки.</p>
-          </div>
-        </div>
-
-        <div class="solution-cta__right">
-          <button class="btn-primary solution-cta__button">Рассчитать стоимость</button>
-          <p class="solution-cta__note">Ответим в течение 10-15 минут, без обязательств.</p>
-        </div>
       </div>
     </div>
   </div>
