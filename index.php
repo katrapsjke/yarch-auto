@@ -30,6 +30,7 @@
     <?php include 'sections/cases/index.php'; ?>
     <?php include 'sections/countries/index.php'; ?>
     <?php include 'sections/seo/index.php'; ?>
+    <?php include 'sections/faq/index.php'; ?>
 
   </body>
 </html>
