@@ -29,6 +29,7 @@
     <?php include 'sections/solution/index.php'; ?>
     <?php include 'sections/cases/index.php'; ?>
     <?php include 'sections/countries/index.php'; ?>
+    <?php include 'sections/seo/index.php'; ?>
 
   </body>
 </html>

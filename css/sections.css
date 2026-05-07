@@ -42,6 +42,10 @@ ul {
   padding-block: var(--space-8);
 }
 
+.section:not(.section-hero):nth-of-type(odd) {
+  background: var(--color-bg-subtle);
+}
+
 .section-sm {
   padding-block: var(--space-7);
 }

@@ -26,8 +26,8 @@
 }
 
 .pain-car-image {
-  width: 100%;
-  max-width: 480px;
+  width: 120%;
+  max-width: 630px;
   height: auto;
   border-radius: var(--radius-l);
   display: block;
