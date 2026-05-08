@@ -32,6 +32,7 @@
     <?php include 'sections/countries/index.php'; ?>
     <?php include 'sections/seo/index.php'; ?>
     <?php include 'sections/faq/index.php'; ?>
+    <?php include 'sections/cta/index.php'; ?>
 
     <script src="js/solution-steps.js" defer></script>
 
