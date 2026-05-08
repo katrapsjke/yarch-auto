@@ -1,5 +1,5 @@
 <!-- ===== SECTION: CASES ===== -->
-<link rel="stylesheet" href="sections/cases/css/styles.css">
+<link rel="stylesheet" href="sections/cases/css/styles.css?v=20260508-1">
 <section class="section section-cases" id="cases">
   <div class="container-site">
 

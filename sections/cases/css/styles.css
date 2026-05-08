@@ -106,7 +106,7 @@
 
 .case-badge__text {
   font-family: var(--font-body);
-  font-size: var(--text-caption);
+  font-size: 13px;
   font-weight: 500;
   color: var(--color-text-primary);
 }
@@ -143,9 +143,9 @@
 
 .case-card__title {
   font-family: var(--font-heading);
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 600;
-  line-height: 1.28;
+  line-height: 1.24;
   color: var(--color-text-primary);
 }
 
@@ -165,20 +165,22 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+  min-width: 0;
 }
 
 .pricing-label {
   font-family: var(--font-body);
-  font-size: var(--text-caption);
+  font-size: 13px;
   color: var(--color-text-secondary);
   font-weight: 500;
 }
 
 .pricing-value {
   font-family: var(--font-heading);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
+  white-space: nowrap;
   color: var(--color-text-primary);
 }
 
@@ -235,16 +237,17 @@
 
 .spec-label {
   font-family: var(--font-body);
-  font-size: var(--text-caption);
+  font-size: 13px;
   color: var(--color-text-secondary);
   font-weight: 500;
 }
 
 .spec-value {
   font-family: var(--font-heading);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.15;
+  white-space: nowrap;
   color: var(--color-text-primary);
 }
 
@@ -356,7 +359,15 @@
   }
 
   .pricing-value {
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .spec-label {
+    font-size: 12px;
+  }
+
+  .spec-value {
+    font-size: 15px;
   }
 }
 
@@ -410,7 +421,7 @@
   }
 
   .case-card__title {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .case-card__image {
@@ -431,6 +442,14 @@
   }
 
   .pricing-value {
+    font-size: 16px;
+  }
+
+  .spec-label {
+    font-size: 11px;
+  }
+
+  .spec-value {
     font-size: 15px;
   }
 
