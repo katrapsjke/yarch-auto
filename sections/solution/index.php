@@ -5,14 +5,6 @@
     <div class="solution-layout">
       <div class="solution-layout__left">
         <div class="solution-head">
-          <span class="solution-badge">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M12 3L19 6V11C19 15.2 16.2 18.9 12 20C7.8 18.9 5 15.2 5 11V6L12 3Z" stroke="#7C3AED" stroke-width="1.6"/>
-              <path d="M9.2 11.8L11.1 13.6L14.8 10" stroke="#7C3AED" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            Берём все риски на себя
-          </span>
-
           <div class="solution-intro">
             <div class="heading-group">
               <h2 class="h2">
@@ -28,47 +20,52 @@
           </div>
         </div>
 
-        <div class="solution-pillars card">
-          <article class="solution-pillar">
-            <span class="solution-pillar__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.6"/>
-                <circle cx="12" cy="12" r="2.2" stroke="currentColor" stroke-width="1.6"/>
-                <path d="M7 10H7.01M17 14H17.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              </svg>
-            </span>
-            <h3 class="solution-pillar__title">Фиксируем стоимость</h3>
-            <p class="solution-pillar__text">До начала сделки без скрытых платежей</p>
-          </article>
-          <article class="solution-pillar">
-            <span class="solution-pillar__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.6"/>
-                <path d="M16 16L20 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M9.8 11L11 12.2L13.6 9.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
-            <h3 class="solution-pillar__title">Полный контроль</h3>
-            <p class="solution-pillar__text">Вы всегда знаете, на каком этапе ваш автомобиль</p>
-          </article>
-          <article class="solution-pillar">
-            <span class="solution-pillar__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 3.8H13.5L18 8.3V20.2H7V3.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M13.5 3.8V8.3H18" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
-                <path d="M9.5 12H15.5M9.5 15H15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-            </span>
-            <h3 class="solution-pillar__title">100% сопровождение</h3>
-            <p class="solution-pillar__text">От подбора до передачи автомобиля вам в руки</p>
-          </article>
-        </div>
+        <nav class="solution-progress" aria-label="Этапы процесса">
+          <ul class="solution-progress__list">
+            <li class="solution-progress__item">
+              <button class="solution-progress__link is-active" type="button" data-solution-step="1">
+                <span class="solution-progress__arrow" aria-hidden="true">→</span>
+                <span class="solution-progress__index" aria-hidden="true">01</span>
+                <span class="solution-progress__label">Консультация и подбор</span>
+              </button>
+            </li>
+            <li class="solution-progress__item">
+              <button class="solution-progress__link" type="button" data-solution-step="2">
+                <span class="solution-progress__arrow" aria-hidden="true">→</span>
+                <span class="solution-progress__index" aria-hidden="true">02</span>
+                <span class="solution-progress__label">Фиксация стоимости</span>
+              </button>
+            </li>
+            <li class="solution-progress__item">
+              <button class="solution-progress__link" type="button" data-solution-step="3">
+                <span class="solution-progress__arrow" aria-hidden="true">→</span>
+                <span class="solution-progress__index" aria-hidden="true">03</span>
+                <span class="solution-progress__label">Проверка и согласование</span>
+              </button>
+            </li>
+            <li class="solution-progress__item">
+              <button class="solution-progress__link" type="button" data-solution-step="4">
+                <span class="solution-progress__arrow" aria-hidden="true">→</span>
+                <span class="solution-progress__index" aria-hidden="true">04</span>
+                <span class="solution-progress__label">Покупка и доставка</span>
+              </button>
+            </li>
+            <li class="solution-progress__item">
+              <button class="solution-progress__link" type="button" data-solution-step="5">
+                <span class="solution-progress__arrow" aria-hidden="true">→</span>
+                <span class="solution-progress__index" aria-hidden="true">05</span>
+                <span class="solution-progress__label">Оформление и передача</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <div class="solution-layout__right">
         <div class="solution-steps">
           <div class="solution-steps__grid">
-            <article class="solution-step card">
+            <div class="solution-step-anchor" id="solution-step-anchor-1" data-solution-step="1" aria-hidden="true"></div>
+            <article class="solution-step solution-step--track card" id="solution-step-1" data-solution-step="1">
               <img src="sections/solution/images/1.jpg" alt="Консультация и подбор" class="solution-step__media">
               <div class="solution-step__body">
                 <span class="solution-step__num">1</span>
@@ -77,7 +74,8 @@
               </div>
             </article>
 
-            <article class="solution-step card">
+            <div class="solution-step-anchor" id="solution-step-anchor-2" data-solution-step="2" aria-hidden="true"></div>
+            <article class="solution-step solution-step--track card" id="solution-step-2" data-solution-step="2">
               <img src="sections/solution/images/2.jpg" alt="Фиксация стоимости" class="solution-step__media">
               <div class="solution-step__body">
                 <span class="solution-step__num">2</span>
@@ -86,7 +84,8 @@
               </div>
             </article>
 
-            <article class="solution-step card">
+            <div class="solution-step-anchor" id="solution-step-anchor-3" data-solution-step="3" aria-hidden="true"></div>
+            <article class="solution-step solution-step--track card" id="solution-step-3" data-solution-step="3">
               <img src="sections/solution/images/3.jpg" alt="Проверка и согласование" class="solution-step__media">
               <div class="solution-step__body">
                 <span class="solution-step__num">3</span>
@@ -95,7 +94,8 @@
               </div>
             </article>
 
-            <article class="solution-step card">
+            <div class="solution-step-anchor" id="solution-step-anchor-4" data-solution-step="4" aria-hidden="true"></div>
+            <article class="solution-step solution-step--track card" id="solution-step-4" data-solution-step="4">
               <img src="sections/solution/images/4.jpg" alt="Покупка и доставка" class="solution-step__media">
               <div class="solution-step__body">
                 <span class="solution-step__num">4</span>
@@ -104,7 +104,8 @@
               </div>
             </article>
 
-            <article class="solution-step card">
+            <div class="solution-step-anchor" id="solution-step-anchor-5" data-solution-step="5" aria-hidden="true"></div>
+            <article class="solution-step solution-step--track card" id="solution-step-5" data-solution-step="5">
               <img src="sections/solution/images/5.jpg" alt="Оформление и передача" class="solution-step__media">
               <div class="solution-step__body">
                 <span class="solution-step__num">5</span>
