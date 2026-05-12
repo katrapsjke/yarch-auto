@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Dynamic sitemap endpoint
+  RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+  # Redirect legacy long import URLs to short URLs
+  RewriteCond %{THE_REQUEST} \s/+pages/import/([a-zA-Z0-9-]+)(?:\.php)?[\s?]
+  RewriteRule ^pages/import/([a-zA-Z0-9-]+)(?:\.php)?/?$ /$1/ [R=301,L]
+
+  # Redirect direct .php requests to clean URLs
+  RewriteCond %{THE_REQUEST} \s/+([a-zA-Z0-9-]+)\.php[\s?]
+  RewriteRule ^([a-zA-Z0-9-]+)\.php$ /$1/ [R=301,L]
+
+  # Universal mapping: if /pages/import/<slug>.php exists, use it
+  RewriteCond %{DOCUMENT_ROOT}/pages/import/$1.php -f
+  RewriteRule ^([a-zA-Z0-9-]+)/?$ pages/import/$1.php [L]
+
+  # Generic fallback for other clean URLs
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+?)/?$ $1.php [L]
+</IfModule>

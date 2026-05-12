@@ -1,18 +1,18 @@
 <?php
 $currentPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
-if ($currentPath === '/index.php') {
+$linksConfig = require __DIR__ . '/../../config/links.php';
+// Normalize path: remove trailing slashes (except for root) and .php extension
+$currentPath = rtrim($currentPath, '/');
+if ($currentPath === '' || $currentPath === '/index.php') {
   $currentPath = '/';
+} elseif (substr($currentPath, -4) === '.php') {
+  $currentPath = substr($currentPath, 0, -4);
 }
 
-$navLinks = [
-  ['href' => '/', 'label' => 'Главная'],
-  ['href' => '/stoimost-importa-avto.php', 'label' => 'Стоимость'],
-  ['href' => '/sroki-dostavki-avto.php', 'label' => 'Сроки доставки'],
-  ['href' => '/rastamozhka-avto-dokumenty.php', 'label' => 'Растаможка'],
-  ['href' => '/avto-iz-korei.php', 'label' => 'Корея'],
-  ['href' => '/avto-iz-kitaya.php', 'label' => 'Китай'],
-  ['href' => '/avto-iz-ssha.php', 'label' => 'США'],
-];
+$navLinks = [['href' => $linksConfig['home']['url'], 'label' => 'Главная']];
+foreach ($linksConfig['import_pages'] as $page) {
+  $navLinks[] = ['href' => $page['url'], 'label' => $page['nav_label']];
+}
 ?>
 <header class="site-header">
   <div class="container-site site-header__inner">

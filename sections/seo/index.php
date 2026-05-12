@@ -1,4 +1,5 @@
 <!-- ===== SECTION: SEO ===== -->
+<?php $linksConfig = require __DIR__ . '/../../config/links.php'; ?>
 <link rel="stylesheet" href="sections/seo/css/styles.css">
 <section class="section section-seo" id="seo">
   <div class="container-site">
@@ -50,12 +51,9 @@
       <h3 class="seo-cluster__title">Подробные страницы по импорту авто</h3>
       <p class="seo-cluster__subtitle">Выберите тему, чтобы изучить расчёты, сроки, документы и особенности покупки по странам.</p>
       <div class="seo-cluster__links">
-        <a href="/stoimost-importa-avto.php" class="seo-cluster__link">Стоимость импорта авто под ключ</a>
-        <a href="/sroki-dostavki-avto.php" class="seo-cluster__link">Сроки доставки авто в Россию</a>
-        <a href="/rastamozhka-avto-dokumenty.php" class="seo-cluster__link">Растаможка авто и документы</a>
-        <a href="/avto-iz-korei.php" class="seo-cluster__link">Импорт авто из Кореи</a>
-        <a href="/avto-iz-kitaya.php" class="seo-cluster__link">Импорт авто из Китая</a>
-        <a href="/avto-iz-ssha.php" class="seo-cluster__link">Импорт авто из США</a>
+        <?php foreach ($linksConfig['import_pages'] as $page): ?>
+          <a href="<?php echo htmlspecialchars($page['url'], ENT_QUOTES, 'UTF-8'); ?>" class="seo-cluster__link"><?php echo htmlspecialchars($page['cluster_label'], ENT_QUOTES, 'UTF-8'); ?></a>
+        <?php endforeach; ?>
       </div>
     </div>
   </div>

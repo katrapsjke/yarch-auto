@@ -1,4 +1,7 @@
 <?php
+$linksConfig = require __DIR__ . '/../../config/links.php';
+$currentSlug = 'avto-iz-kitaya';
+$currentUrl = $linksConfig['import_pages'][$currentSlug]['url'];
 $breadcrumbs = [
   ['label' => 'Главная', 'url' => '/'],
   ['label' => 'Импорт авто из Китая', 'url' => null],
@@ -10,16 +13,16 @@ $breadcrumbs = [
     <?php
       $siteScheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
       $siteHost = $_SERVER['HTTP_HOST'] ?? 'example.com';
-      $path = '/avto-iz-kitaya';
+      $path = $currentUrl;
       $canonicalUrl = $siteScheme . '://' . $siteHost . $path;
       $pageTitle = 'Импорт авто из Китая в Россию под ключ';
-      $pageDescription = 'Импорт авто из Китая: новые модели, гибриды и электромобили. Рассказываем про стоимость, сроки поставки и ключевые этапы покупки под ключ.';
+      $pageDescription = 'Импорт авто из Китая: новые модели, гибриды и электромобили по конкурентной цене. Как проходит покупка, что проверить до выкупа и для кого это направление.';
     ?>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <?php include 'sections/shared/seo-meta.php'; ?>
+    <?php include '../../sections/shared/seo-meta.php'; ?>
 
-    <?php include 'sections/shared/head-styles.php'; ?>
+    <?php include '../../sections/shared/head-styles.php'; ?>
     <?php
     $breadcrumbSchema = ['@context' => 'https://schema.org', '@type' => 'BreadcrumbList', 'itemListElement' => []];
     foreach ($breadcrumbs as $i => $crumb) {
@@ -29,8 +32,8 @@ $breadcrumbs = [
     <script type="application/ld+json"><?php echo json_encode($breadcrumbSchema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?></script>
   </head>
   <body class="topic-page">
-    <?php include 'sections/shared/header.php'; ?>
-    <?php include 'sections/shared/breadcrumbs.php'; ?>
+    <?php include '../../sections/shared/header.php'; ?>
+    <?php include '../../sections/shared/breadcrumbs.php'; ?>
     <header class="topic-hero">
       <div class="container-site">
         <span class="topic-kicker">Направление поставки</span>
@@ -74,16 +77,15 @@ $breadcrumbs = [
         <div class="topic-card">
           <h2 class="h3">Другие полезные страницы</h2>
           <div class="topic-links">
-            <a href="/stoimost-importa-avto">Стоимость импорта авто</a>
-            <a href="/sroki-dostavki-avto">Сроки доставки авто</a>
-            <a href="/rastamozhka-avto-dokumenty">Растаможка и документы</a>
-            <a href="/avto-iz-korei">Авто из Кореи</a>
-            <a href="/avto-iz-ssha">Авто из США</a>
+            <?php foreach ($linksConfig['import_pages'] as $slug => $page): ?>
+              <?php if ($slug === $currentSlug) { continue; } ?>
+              <a href="<?php echo htmlspecialchars($page['url'], ENT_QUOTES, 'UTF-8'); ?>"><?php echo htmlspecialchars($page['related_label'], ENT_QUOTES, 'UTF-8'); ?></a>
+            <?php endforeach; ?>
           </div>
         </div>
       </aside>
     </main>
-    <?php include 'sections/cta/index.php'; ?>
-    <?php include 'sections/shared/footer.php'; ?>
+    <?php include '../../sections/cta/index.php'; ?>
+    <?php include '../../sections/shared/footer.php'; ?>
   </body>
 </html>

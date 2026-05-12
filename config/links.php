@@ -1,0 +1,65 @@
+<?php
+
+return [
+  'home' => [
+    'url' => '/',
+    'priority' => '1.0',
+    'changefreq' => 'weekly',
+  ],
+  'import_pages' => [
+    'stoimost-importa-avto' => [
+      'url' => '/stoimost-importa-avto',
+      'nav_label' => 'Стоимость',
+      'footer_label' => 'Стоимость импорта авто',
+      'related_label' => 'Стоимость импорта авто',
+      'cluster_label' => 'Стоимость импорта авто под ключ',
+      'changefreq' => 'weekly',
+      'priority' => '0.8',
+    ],
+    'sroki-dostavki-avto' => [
+      'url' => '/sroki-dostavki-avto',
+      'nav_label' => 'Сроки доставки',
+      'footer_label' => 'Сроки доставки авто',
+      'related_label' => 'Сроки доставки авто',
+      'cluster_label' => 'Сроки доставки авто в Россию',
+      'changefreq' => 'weekly',
+      'priority' => '0.8',
+    ],
+    'rastamozhka-avto-dokumenty' => [
+      'url' => '/rastamozhka-avto-dokumenty',
+      'nav_label' => 'Растаможка',
+      'footer_label' => 'Растаможка и документы',
+      'related_label' => 'Растаможка и документы',
+      'cluster_label' => 'Растаможка авто и документы',
+      'changefreq' => 'weekly',
+      'priority' => '0.8',
+    ],
+    'avto-iz-korei' => [
+      'url' => '/avto-iz-korei',
+      'nav_label' => 'Корея',
+      'footer_label' => 'Импорт авто из Кореи',
+      'related_label' => 'Авто из Кореи',
+      'cluster_label' => 'Импорт авто из Кореи',
+      'changefreq' => 'weekly',
+      'priority' => '0.8',
+    ],
+    'avto-iz-kitaya' => [
+      'url' => '/avto-iz-kitaya',
+      'nav_label' => 'Китай',
+      'footer_label' => 'Импорт авто из Китая',
+      'related_label' => 'Авто из Китая',
+      'cluster_label' => 'Импорт авто из Китая',
+      'changefreq' => 'weekly',
+      'priority' => '0.8',
+    ],
+    'avto-iz-ssha' => [
+      'url' => '/avto-iz-ssha',
+      'nav_label' => 'США',
+      'footer_label' => 'Импорт авто из США',
+      'related_label' => 'Авто из США',
+      'cluster_label' => 'Импорт авто из США',
+      'changefreq' => 'weekly',
+      'priority' => '0.8',
+    ],
+  ],
+];
