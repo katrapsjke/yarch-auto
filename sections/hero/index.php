@@ -15,25 +15,26 @@
     <div class="hero-content">
 
       <h1 class="hero-title">
-        <span class="hero-title__gradient">Импорт автомобилей</span>
+        <span class="hero-title__gradient">Импорт авто под ключ</span>
         <br />
         <span class="hero-title__white">из Кореи, Китая и США</span>
         <br />
-        <span class="hero-title__gradient">под ключ в Россию</span>
+        <span class="hero-title__gradient">с доставкой в Россию</span>
       </h1>
 
       <p class="hero-subtitle">
-        Подберём, проверим, доставим и оформим автомобиль
-        <span class="hero-subtitle__accent">без рисков и скрытых платежей</span>.
-        Экономия до 30% по сравнению с рынком в России
+        Подбираем и проверяем автомобиль, выкупаем на аукционе или у дилера,
+        доставляем и оформляем
+        <span class="hero-subtitle__accent">без скрытых комиссий и сюрпризов по цене</span>.
+        До 30% выгоднее, чем покупка на рынке РФ
       </p>
 
       <div class="hero-cta">
         <a href="#cta" class="btn-primary hero-cta__main">
-          Рассчитать стоимость импорта
+          Рассчитать стоимость авто
         </a>
         <a href="#seo" class="btn-outline hero-cta__secondary">
-          О нас
+          Как проходит импорт
         </a>
       </div>
 
@@ -50,7 +51,7 @@
           </svg>
           <div>
             <strong class="hero-stats__value">500+ автомобилей</strong>
-            <span class="hero-stats__label">привезли клиентам</span>
+            <span class="hero-stats__label">доставили клиентам в Россию</span>
           </div>
         </li>
         <li class="hero-stats__item">
@@ -60,8 +61,8 @@
             <path d="M12 2v2M12 20v2M2 12h2M20 12h2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-opacity="0.6"/>
           </svg>
           <div>
-            <strong class="hero-stats__value">Работаем</strong>
-            <span class="hero-stats__label">по всей России</span>
+            <strong class="hero-stats__value">Работаем официально</strong>
+            <span class="hero-stats__label">по договору по всей России</span>
           </div>
         </li>
         <li class="hero-stats__item">
@@ -71,7 +72,7 @@
           </svg>
           <div>
             <strong class="hero-stats__value">Показываем реальные кейсы</strong>
-            <span class="hero-stats__label">и проверки</span>
+            <span class="hero-stats__label">с расчётами, фото и проверкой авто</span>
           </div>
         </li>
       </ul>

@@ -4,12 +4,12 @@
   <div class="container-site">
 
     <div class="countries-head">
-      <div class="countries-badge">Из каких стран мы привозим автомобили</div>
+      <div class="countries-badge">Страны поставки автомобилей в Россию</div>
       <h2 class="h2 countries-title">
-        Импорт автомобилей из <span class="text-gradient">Кореи, Китая и США</span>
+        Импорт авто из <span class="text-gradient">Кореи, Китая и США</span>
       </h2>
       <p class="body countries-subtitle">
-        Подбираем автомобиль под задачи и бюджет. Выберите страну, чтобы увидеть ключевые преимущества и формат поставки.
+        Подбираем страну поставки под вашу задачу: выгодная цена, нужная комплектация, сроки доставки и прозрачный расчёт под ключ.
       </p>
     </div>
 
@@ -28,23 +28,23 @@
         <div class="countries-card__body">
           <div class="countries-card__intro">
             <h3 class="countries-card__title">Импорт авто из <span class="text-gradient">Кореи</span></h3>
-            <p class="countries-card__text">Прозрачная история, небольшие пробеги и надежные модели</p>
+            <p class="countries-card__text">Проверенные автомобили с прозрачной историей и хорошим состоянием</p>
           </div>
 
           <ul class="countries-card__meta">
             <li class="countries-meta-item">
-              <span>Проверенные площадки</span>
+              <span>Прозрачные площадки и отчёты</span>
             </li>
             <li class="countries-meta-item">
-              <span>Честные аукционы</span>
+              <span>Небольшие пробеги и ликвидные модели</span>
             </li>
             <li class="countries-meta-item">
-              <span>Минимальные риски</span>
+              <span>Минимальные риски при покупке</span>
             </li>
           </ul>
 
           <a href="#cta" class="countries-card__btn">
-            <span>Подробнее о Корее</span>
+            <span>Подобрать авто из Кореи</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -66,23 +66,23 @@
         <div class="countries-card__body">
           <div class="countries-card__intro">
             <h3 class="countries-card__title">Импорт авто из <span class="text-gradient">Китая</span></h3>
-            <p class="countries-card__text">Современные технологии и богатые комплектации</p>
+            <p class="countries-card__text">Новые автомобили, гибриды и электромобили по конкурентной цене</p>
           </div>
 
           <ul class="countries-card__meta">
             <li class="countries-meta-item">
-              <span>Новые авто и электромобили</span>
+              <span>Широкий выбор новых моделей</span>
             </li>
             <li class="countries-meta-item">
-              <span>Выгодные цены</span>
+              <span>Технологичные комплектации</span>
             </li>
             <li class="countries-meta-item">
-              <span>Быстрая доставка</span>
+              <span>Оптимальные сроки поставки</span>
             </li>
           </ul>
 
           <a href="#cta" class="countries-card__btn">
-            <span>Подробнее о Китае</span>
+            <span>Подобрать авто из Китая</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -104,7 +104,7 @@
         <div class="countries-card__body">
           <div class="countries-card__intro">
             <h3 class="countries-card__title">Импорт авто из <span class="text-gradient">США</span></h3>
-            <p class="countries-card__text">Большой выбор моделей и прозрачные условия покупки</p>
+            <p class="countries-card__text">Автомобили с аукционов США с потенциалом максимальной экономии</p>
           </div>
 
           <ul class="countries-card__meta">
@@ -112,15 +112,15 @@
               <span>Аукционы США</span>
             </li>
             <li class="countries-meta-item">
-              <span>Большой выбор</span>
+              <span>Большой выбор комплектаций</span>
             </li>
             <li class="countries-meta-item">
-              <span>Существенная экономия</span>
+              <span>Существенная экономия бюджета</span>
             </li>
           </ul>
 
           <a href="#cta" class="countries-card__btn">
-            <span>Подробнее о США</span>
+            <span>Подобрать авто из США</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -134,28 +134,28 @@
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 3l8 3v7c0 5.2-3.5 9.9-8 11-4.5-1.1-8-5.8-8-11V6l8-3z" stroke="currentColor" stroke-width="1.8"/>
         </svg>
-        <span>Работаем напрямую с площадками и дилерами</span>
+        <span>Работаем напрямую с аукционами и дилерами</span>
       </div>
       <div class="countries-trust__item">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect x="5" y="4" width="18" height="20" rx="2" stroke="currentColor" stroke-width="1.8"/>
           <path d="M9 10h10M9 15h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
         </svg>
-        <span>Фиксируем стоимость до начала сделки</span>
+        <span>Считаем полную стоимость до выкупа</span>
       </div>
       <div class="countries-trust__item">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 22l7-7m0 0l3 3 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
           <circle cx="13" cy="15" r="8" stroke="currentColor" stroke-width="1.8"/>
         </svg>
-        <span>Контролируем каждый этап доставки</span>
+        <span>Контролируем каждый этап логистики</span>
       </div>
       <div class="countries-trust__item">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M14 3l8 3v7c0 5.2-3.5 9.9-8 11-4.5-1.1-8-5.8-8-11V6l8-3z" stroke="currentColor" stroke-width="1.8"/>
           <path d="M10 14l3 3 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <span>Гарантия прозрачности и безопасности</span>
+        <span>Прозрачный импорт и юридическая безопасность</span>
       </div>
     </div>
 

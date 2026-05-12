@@ -7,21 +7,21 @@
     <div class="cases-header">
       <div class="cases-header__content">
         <h2 class="h2">
-          Примеры привезённых <span class="text-gradient">автомобилей</span>
+          Кейсы: сколько стоит <span class="text-gradient">импорт авто под ключ</span>
         </h2>
         <p class="body cases-header__subtitle">
-          Показываем реальные сделки: сколько стоил автомобиль в России и за какую цену мы привезли его клиенту
+          Показываем реальные сделки с цифрами: цена авто в РФ, итоговая стоимость импорта и фактическая экономия клиента
         </p>
       </div>
 
       <!-- Carousel navigation -->
       <div class="cases-nav">
-        <button class="cases-nav__btn cases-nav__btn--prev" aria-label="Previous case">
+        <button class="cases-nav__btn cases-nav__btn--prev" aria-label="Предыдущий кейс">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
-        <button class="cases-nav__btn cases-nav__btn--next" aria-label="Next case">
+        <button class="cases-nav__btn cases-nav__btn--next" aria-label="Следующий кейс">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -91,13 +91,13 @@
         <div class="cases-cta__text">
           <h3 class="cases-cta__title">Хотите так же?</h3>
           <p class="cases-cta__subtitle">
-            Подберём лучший вариант под ваш бюджет и привезём автомобиль под ключ
+            Подберём автомобиль под ваш бюджет и рассчитаем честную стоимость импорта до начала сделки
           </p>
         </div>
       </div>
 
       <a href="#cta" class="btn-primary cases-cta__btn">
-        Рассчитать стоимость
+        Рассчитать стоимость под ключ
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>

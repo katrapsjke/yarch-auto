@@ -8,15 +8,15 @@
       <div class="pain-top__text">
         <div class="heading-group">
           <h2 class="h2">
-            Почему импорт автомобиля<br />
-            вызывает <span class="text-gradient">сомнения</span>
+            Почему импорт авто<br />
+            вызывает <span class="text-gradient">стресс и недоверие</span>
           </h2>
           <div class="content-group pain-top__body">
             <p class="body">
-              Импорт автомобиля требует понимания рынка, логистики и юридических нюансов.
+              Импорт автомобиля из-за границы требует опыта в подборе, проверке, логистике и растаможке.
             </p>
             <p class="body" style="margin-top: 16px;">
-              Без опыта сложно оценить реальные риски, итоговую стоимость и качество автомобиля до его получения.
+              Без понятного процесса сложно заранее оценить риски, итоговую стоимость под ключ и реальное состояние автомобиля.
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@
               <line x1="14" y1="30" x2="26" y2="30" stroke="#9747FF" stroke-width="1.4" stroke-linecap="round"/>
             </svg>
           </div>
-          <p class="pain-points__label">Итоговая цена постоянно<br />меняется в процессе</p>
+          <p class="pain-points__label">Итоговая стоимость авто<br />растёт в процессе сделки</p>
         </li>
 
         <li class="pain-points__item">
@@ -57,7 +57,7 @@
               <circle cx="20" cy="28.5" r="0.8" fill="#9747FF"/>
             </svg>
           </div>
-          <p class="pain-points__label">Неясные сроки<br />и скрытые расходы</p>
+          <p class="pain-points__label">Непонятные сроки доставки<br />и скрытые платежи</p>
         </li>
 
         <li class="pain-points__item">
@@ -71,7 +71,7 @@
               <line x1="20" y1="6" x2="20" y2="14" stroke="#9747FF" stroke-width="1.4" stroke-linecap="round"/>
             </svg>
           </div>
-          <p class="pain-points__label">Сложности с доставкой<br />и таможней</p>
+          <p class="pain-points__label">Сложности с логистикой,<br />документами и таможней</p>
         </li>
 
         <li class="pain-points__item">
@@ -87,7 +87,7 @@
               <line x1="20" y1="18" x2="22" y2="16" stroke="#9747FF" stroke-width="1.2" stroke-linecap="round"/>
             </svg>
           </div>
-          <p class="pain-points__label">Страх получить<br />автомобиль с проблемами</p>
+          <p class="pain-points__label">Страх получить авто<br />со скрученным пробегом или дефектами</p>
         </li>
 
         <li class="pain-points__item">
@@ -98,7 +98,7 @@
               <circle cx="20" cy="28" r="1.2" fill="#9747FF"/>
             </svg>
           </div>
-          <p class="pain-points__label">Риски при покупке<br />за границей</p>
+          <p class="pain-points__label">Риск ошибок при покупке<br />автомобиля за границей</p>
         </li>
 
       </ul>
@@ -107,8 +107,9 @@
     <!-- Bottom: closing statement -->
     <div class="pain-statement">
       <p class="pain-statement__text">
-        <span class="text-gradient">Без опыта</span> и отлаженных процессов импорт<br />
-        может обернуться <span class="text-gradient">потерей денег и времени</span>
+        Без системной проверки и прозрачного расчёта
+        <span class="text-gradient">импорт авто</span> может обернуться
+        <span class="text-gradient">потерей денег, времени и нервов</span>
       </p>
     </div>
 

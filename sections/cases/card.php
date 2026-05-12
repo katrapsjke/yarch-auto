@@ -24,11 +24,11 @@
     <div class="case-card__pricing">
       <div class="pricing-row">
         <div class="pricing-item">
-          <span class="pricing-label">В России</span>
+          <span class="pricing-label">Цена в России</span>
           <span class="pricing-value"><?= $price_russia ?></span>
         </div>
         <div class="pricing-item">
-          <span class="pricing-label">Привезли</span>
+          <span class="pricing-label">Под ключ</span>
           <span class="pricing-value"><?= $price_brought ?></span>
         </div>
         <div class="pricing-item">
@@ -50,7 +50,7 @@
       <div class="spec-item">
         <img src="images/calendar.svg">
         <div class="spec-item__content">
-          <span class="spec-label">Срок доставки</span>
+          <span class="spec-label">Срок поставки</span>
           <span class="spec-value"><?= $delivery_time ?></span>
         </div>
       </div>
