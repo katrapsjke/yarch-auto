@@ -95,6 +95,7 @@ $breadcrumbs = [
         </div>
       </aside>
     </main>
+    <?php include 'sections/cta/index.php'; ?>
     <?php include 'sections/shared/footer.php'; ?>
   </body>
 </html>

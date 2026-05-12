@@ -76,6 +76,7 @@
 
     <!-- Page styles -->
     <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/topic-pages.css" />
 
     <?php foreach ($structuredData as $schema): ?>
       <script type="application/ld+json"><?php echo json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?></script>
@@ -83,7 +84,7 @@
 
   </head>
   <body>
-
+    <?php include 'sections/shared/header.php'; ?>
     <?php include 'sections/hero/index.php'; ?>
     <?php include 'sections/pain/index.php'; ?>
     <?php include 'sections/solution/index.php'; ?>
