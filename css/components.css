@@ -1,13 +1,25 @@
 .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 56px;
+  line-height: 56px;
   padding-inline: 28px;
   border-radius: var(--radius-s);
   background: var(--gradient-primary);
   color: #fff;
+  text-decoration: none;
   font-family: var(--font-body);
   font-size: var(--text-button);
   font-weight: 600;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:link,
+.btn-primary:visited,
+.btn-primary:hover,
+.btn-primary:active {
+  text-decoration: none;
 }
 
 .btn-primary:hover {

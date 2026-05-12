@@ -1,9 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <?php
+      $siteScheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+      $siteHost = $_SERVER['HTTP_HOST'] ?? 'example.com';
+      $canonicalUrl = $siteScheme . '://' . $siteHost . '/';
+      $pageTitle = 'Импорт автомобилей под ключ — Корея, Китай, США';
+      $pageDescription = 'Импорт авто из Кореи, Китая и США под ключ в Россию: подбор, проверка, доставка и таможня с прозрачной сметой. Рассчитайте стоимость за 15 минут.';
+      $ogImageUrl = $siteScheme . '://' . $siteHost . '/sections/cases/images/kia_k5.jpg';
+
+      $structuredData = [
+        [
+          '@context' => 'https://schema.org',
+          '@type' => 'WebSite',
+          'name' => 'Импорт автомобилей под ключ',
+          'url' => $canonicalUrl,
+          'inLanguage' => 'ru-RU'
+        ],
+        [
+          '@context' => 'https://schema.org',
+          '@type' => 'Organization',
+          'name' => 'Импорт автомобилей под ключ',
+          'url' => $canonicalUrl
+        ],
+        [
+          '@context' => 'https://schema.org',
+          '@type' => 'Service',
+          'name' => 'Импорт автомобилей в Россию под ключ',
+          'description' => 'Подбор, проверка, покупка, доставка и таможенное оформление автомобилей из Кореи, Китая и США.',
+          'areaServed' => [
+            '@type' => 'Country',
+            'name' => 'Russia'
+          ],
+          'provider' => [
+            '@type' => 'Organization',
+            'name' => 'Импорт автомобилей под ключ',
+            'url' => $canonicalUrl
+          ]
+        ]
+      ];
+    ?>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Импорт автомобилей под ключ — Корея, Китай, США</title>
+    <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8'); ?>" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?>" />
+    <meta property="og:description" content="<?php echo htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8'); ?>" />
+    <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES, 'UTF-8'); ?>" />
+    <meta property="og:image" content="<?php echo htmlspecialchars($ogImageUrl, ENT_QUOTES, 'UTF-8'); ?>" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?>" />
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($pageDescription, ENT_QUOTES, 'UTF-8'); ?>" />
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($ogImageUrl, ENT_QUOTES, 'UTF-8'); ?>" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +76,10 @@
 
     <!-- Page styles -->
     <link rel="stylesheet" href="css/sections.css" />
+
+    <?php foreach ($structuredData as $schema): ?>
+      <script type="application/ld+json"><?php echo json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES); ?></script>
+    <?php endforeach; ?>
 
   </head>
   <body>

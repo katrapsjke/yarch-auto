@@ -118,7 +118,7 @@
               <div class="solution-step__body solution-step__body--cta">
                 <h4 class="solution-step__title solution-step__title text-gradient--cta">Рассчитаем стоимость автомобиля под ваш бюджет</h4>
                 <p class="solution-step__text solution-step__text--cta">Подберём варианты, посчитаем все расходы и покажем итоговую цену ещё до начала сделки.</p>
-                <button class="btn-primary solution-cta__button">Рассчитать стоимость</button>
+                <a href="#cta" class="btn-primary solution-cta__button">Рассчитать стоимость</a>
               </div>
             </article>
           </div>

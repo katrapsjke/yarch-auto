@@ -273,6 +273,14 @@
     width: 100%;
     background: #ffffff;
     color: #6f2de0;
+    text-decoration: none;
+}
+
+.solution-cta__button:link,
+.solution-cta__button:visited,
+.solution-cta__button:hover,
+.solution-cta__button:active {
+    text-decoration: none;
 }
 
 .solution-cta__note {

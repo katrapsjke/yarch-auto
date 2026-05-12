@@ -111,6 +111,7 @@
   font-weight: 600;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .hero-cta__main:hover {
@@ -120,6 +121,7 @@
 
 .hero-cta__secondary {
   height: 56px;
+  line-height: 56px;
   padding-inline: 28px;
   border-radius: var(--radius-s);
   border: 1.5px solid rgba(255, 255, 255, 0.5);
@@ -129,6 +131,7 @@
   font-weight: 600;
   transition: border-color 0.2s ease, background 0.2s ease;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .hero-cta__secondary:hover {

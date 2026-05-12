@@ -29,12 +29,12 @@
       </p>
 
       <div class="hero-cta">
-        <button class="btn-primary hero-cta__main">
+        <a href="#cta" class="btn-primary hero-cta__main">
           Рассчитать стоимость импорта
-        </button>
-        <button class="btn-outline hero-cta__secondary">
+        </a>
+        <a href="#seo" class="btn-outline hero-cta__secondary">
           О нас
-        </button>
+        </a>
       </div>
 
     </div>
