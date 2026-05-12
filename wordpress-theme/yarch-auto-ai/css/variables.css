@@ -1,0 +1,72 @@
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+
+  --color-primary-blue: #0085ff;
+  --color-primary-purple: #9747ff;
+
+  --color-text-primary: #111111;
+  --color-text-secondary: #374151;
+  --color-text-muted: #6b7280;
+  --color-text-disabled: #9ca3af;
+
+  --color-bg-default: #ffffff;
+  --color-bg-subtle: #f9fafb;
+  --color-border-default: #e5e7eb;
+
+  --color-success: #16a34a;
+  --color-error: #dc2626;
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(135deg, #0085ff 0%, #9747ff 100%);
+
+  /* Typography */
+  --font-heading: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Font sizes */
+  --text-h1: 48px;
+  --text-h2: 34px;
+  --text-h3: 22px;
+  --text-subtitle: 18px;
+  --text-body: 16px;
+  --text-caption: 14px;
+  --text-button: 16px;
+
+  /* Line heights */
+  --leading-h1: 1.14;
+  --leading-h2: 1.25;
+  --leading-h3: 1.35;
+  --leading-subtitle: 1.5;
+  --leading-body: 1.56;
+  --leading-caption: 1.45;
+
+  /* Letter spacing */
+  --tracking-h1: -0.005em;
+  --tracking-h2: -0.003em;
+  --tracking-h3: 0;
+  --tracking-body: 0;
+
+  /* Spacing */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 64px;
+  --space-7: 80px;
+  --space-8: 120px;
+
+  /* Layout */
+  --container-width: 1200px;
+  --container-padding: 20px;
+
+  /* Radius */
+  --radius-s: 12px;
+  --radius-m: 16px;
+  --radius-l: 20px;
+
+  /* Shadows */
+  --shadow-soft: 0 4px 16px rgba(17, 17, 17, 0.06);
+  --shadow-card: 0 8px 24px rgba(17, 17, 17, 0.08);
+}

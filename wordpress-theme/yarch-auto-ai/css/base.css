@@ -1,0 +1,27 @@
+.container-site {
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+.section {
+  padding-block: var(--space-8);
+}
+
+.section-sm {
+  padding-block: var(--space-7);
+}
+
+.text-container {
+  max-width: 680px;
+}
+
+.heading-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-group {
+  margin-top: 28px;
+}

@@ -1,0 +1,73 @@
+/* ==============================================
+   SHARED UTILITIES & GLOBALS
+   ============================================== */
+
+/* ---- Gradient text utility ---- */
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- Reset ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-secondary);
+  background: var(--color-bg-default);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ---- Base section ---- */
+.section {
+  padding-block: var(--space-8);
+}
+
+.section:not(.section-hero):nth-of-type(odd) {
+  background: var(--color-bg-subtle);
+}
+
+.section-sm {
+  padding-block: var(--space-7);
+}
+
+/* ---- Text container & groups ---- */
+.text-container {
+  max-width: 680px;
+}
+
+.heading-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-group {
+  margin-top: 28px;
+}
+
+/* ---- Responsive baseline ---- */
+@media (max-width: 680px) {
+  .section {
+    padding-block: var(--space-7);
+  }
+}
