@@ -1,0 +1,3 @@
+[submodule ".github/skills/marketing"]
+	path = .github/skills/marketing
+	url = https://github.com/WilcoRakhorst/helder-ai-marketing-skills.git
