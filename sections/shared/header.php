@@ -1,15 +1,34 @@
+<?php
+$currentPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+if ($currentPath === '/index.php') {
+  $currentPath = '/';
+}
+
+$navLinks = [
+  ['href' => '/', 'label' => 'Главная'],
+  ['href' => '/stoimost-importa-avto.php', 'label' => 'Стоимость'],
+  ['href' => '/sroki-dostavki-avto.php', 'label' => 'Сроки доставки'],
+  ['href' => '/rastamozhka-avto-dokumenty.php', 'label' => 'Растаможка'],
+  ['href' => '/avto-iz-korei.php', 'label' => 'Корея'],
+  ['href' => '/avto-iz-kitaya.php', 'label' => 'Китай'],
+  ['href' => '/avto-iz-ssha.php', 'label' => 'США'],
+];
+?>
 <header class="site-header">
   <div class="container-site site-header__inner">
     <a class="site-header__logo" href="/">Импорт авто под ключ</a>
 
     <nav class="site-header__nav" aria-label="Основная навигация">
-      <a class="site-header__nav-link" href="/">Главная</a>
-      <a class="site-header__nav-link" href="/stoimost-importa-avto.php">Стоимость</a>
-      <a class="site-header__nav-link" href="/sroki-dostavki-avto.php">Сроки доставки</a>
-      <a class="site-header__nav-link" href="/rastamozhka-avto-dokumenty.php">Растаможка</a>
-      <a class="site-header__nav-link" href="/avto-iz-korei.php">Корея</a>
-      <a class="site-header__nav-link" href="/avto-iz-kitaya.php">Китай</a>
-      <a class="site-header__nav-link" href="/avto-iz-ssha.php">США</a>
+      <?php foreach ($navLinks as $link): ?>
+        <?php $isActive = $currentPath === $link['href']; ?>
+        <a
+          class="site-header__nav-link<?php echo $isActive ? ' is-active' : ''; ?>"
+          href="<?php echo htmlspecialchars($link['href'], ENT_QUOTES, 'UTF-8'); ?>"
+          <?php if ($isActive): ?>aria-current="page"<?php endif; ?>
+        >
+          <?php echo htmlspecialchars($link['label'], ENT_QUOTES, 'UTF-8'); ?>
+        </a>
+      <?php endforeach; ?>
     </nav>
 
     <a class="site-header__cta btn-primary" href="/#cta">Рассчитать стоимость</a>
