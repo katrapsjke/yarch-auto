@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% include 'partials/seo.html.twig' %}
+    {% include 'partials/head-styles.html.twig' %}
+    {% block head %}{% endblock %}
+  </head>
+  <body class="{{ body_class|default('') }}">
+    {% include 'partials/header.html.twig' %}
+    {% block content %}{% endblock %}
+    {% include 'partials/footer.html.twig' %}
+    <script src="{{ url('theme://js/solution-steps.js') }}" defer></script>
+  </body>
+</html>

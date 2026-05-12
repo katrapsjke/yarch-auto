@@ -1,0 +1,82 @@
+<!-- ===== SECTION: SOLUTION ===== -->
+<section class="section section-solution" id="solution">
+  <div class="container-site">
+    <div class="solution-layout">
+      <div class="solution-layout__left">
+        <div class="solution-head">
+          <div class="solution-intro">
+            <div class="heading-group">
+              <h2 class="h2">
+                Полностью ведём импорт авто
+                <span class="solution-head__dash">—</span>
+                <span class="text-gradient">от подбора до передачи ключей</span>
+              </h2>
+              <p class="subtitle solution-subtitle content-group">
+                Вы получаете прозрачный маршрут сделки: проверка, выкуп, доставка,
+                растаможка и оформление с фиксированной логикой расходов.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <nav class="solution-progress" aria-label="Этапы процесса">
+          <ul class="solution-progress__list">
+            {% set steps = [
+              {num: '01', label: 'Бриф и подбор автомобиля'},
+              {num: '02', label: 'Расчёт стоимости под ключ'},
+              {num: '03', label: 'Проверка и согласование авто'},
+              {num: '04', label: 'Выкуп и доставка в Россию'},
+              {num: '05', label: 'Таможня и передача клиенту'},
+            ] %}
+            {% for step in steps %}
+            <li class="solution-progress__item">
+              <button class="solution-progress__link{{ loop.first ? ' is-active' : '' }}" type="button" data-solution-step="{{ loop.index }}">
+                <span class="solution-progress__arrow" aria-hidden="true">→</span>
+                <span class="solution-progress__index" aria-hidden="true">{{ step.num }}</span>
+                <span class="solution-progress__label">{{ step.label }}</span>
+              </button>
+            </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+
+      <div class="solution-layout__right">
+        <div class="solution-steps">
+          <div class="solution-steps__grid">
+
+            {% set step_cards = [
+              {title: 'Бриф и подбор автомобиля',     text: 'Фиксируем бюджет и требования, подбираем ликвидные варианты из Кореи, Китая и США.',                                          img: '1.jpg', alt: 'Бриф и подбор автомобиля'},
+              {title: 'Расчёт стоимости под ключ',    text: 'Считаем авто, логистику, таможенные платежи и оформление, чтобы вы заранее видели полный бюджет.',                            img: '2.jpg', alt: 'Расчёт стоимости под ключ'},
+              {title: 'Проверка и согласование авто', text: 'Проверяем историю, пробег, состояние и документы, отправляем отчёт и согласуем выкуп с вами.',                                img: '3.jpg', alt: 'Проверка и согласование автомобиля'},
+              {title: 'Выкуп и доставка в Россию',    text: 'Выкупаем автомобиль и сопровождаем маршрут до РФ с регулярными статусами по срокам.',                                        img: '4.jpg', alt: 'Выкуп и доставка в Россию'},
+              {title: 'Таможня и передача клиенту',   text: 'Проходим таможенное оформление, готовим документы и передаём авто в согласованном месте.',                                   img: '5.jpg', alt: 'Таможня и передача клиенту'},
+            ] %}
+
+            {% for card in step_cards %}
+            <div class="solution-step-anchor" id="solution-step-anchor-{{ loop.index }}" data-solution-step="{{ loop.index }}" aria-hidden="true"></div>
+            <article class="solution-step solution-step--track card{{ loop.first ? ' is-active' : '' }}" id="solution-step-{{ loop.index }}" data-solution-step="{{ loop.index }}">
+              <img src="{{ url('theme://sections/solution/images/' ~ card.img) }}" alt="{{ card.alt }}" class="solution-step__media">
+              <div class="solution-step__body">
+                <span class="solution-step__num">{{ loop.index }}</span>
+                <h4 class="solution-step__title text-gradient">{{ card.title }}</h4>
+                <p class="solution-step__text">{{ card.text }}</p>
+              </div>
+            </article>
+            {% endfor %}
+
+            <article class="solution-step solution-step--cta card">
+              <div class="solution-step__body solution-step__body--cta">
+                <h4 class="solution-step__title text-gradient--cta">Получите расчёт импорта авто под ключ</h4>
+                <p class="solution-step__text solution-step__text--cta">Покажем реальные варианты и финальную стоимость с учётом доставки, таможни и оформления.</p>
+                <a href="#cta" class="btn-primary solution-cta__button">Получить расчёт</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== /SECTION: SOLUTION ===== -->

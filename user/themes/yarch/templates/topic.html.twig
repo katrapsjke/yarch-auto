@@ -1,0 +1,64 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set body_class = 'topic-page' %}
+
+{% set all_topic_pages = [
+  {slug: 'stoimost-importa-avto',      label: 'Стоимость импорта авто'},
+  {slug: 'sroki-dostavki-avto',        label: 'Сроки доставки авто'},
+  {slug: 'rastamozhka-avto-dokumenty', label: 'Растаможка и документы'},
+  {slug: 'avto-iz-korei',              label: 'Авто из Кореи'},
+  {slug: 'avto-iz-kitaya',             label: 'Авто из Китая'},
+  {slug: 'avto-iz-ssha',               label: 'Авто из США'},
+] %}
+
+{% block head %}
+<script type="application/ld+json">{{ {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    {'@type': 'ListItem', 'position': 1, 'name': 'Главная',    'item': base_url_absolute ~ '/'},
+    {'@type': 'ListItem', 'position': 2, 'name': page.title,   'item': page.url(true)},
+  ]
+}|json_encode|raw }}</script>
+{% endblock %}
+
+{% block content %}
+  {% set breadcrumbs = [
+    {label: 'Главная', url: base_url_relative ~ '/'},
+    {label: page.title, url: null},
+  ] %}
+  {% include 'partials/breadcrumbs.html.twig' %}
+
+  <header class="topic-hero">
+    <div class="container-site">
+      {% if page.header.kicker %}
+        <span class="topic-kicker">{{ page.header.kicker }}</span>
+      {% endif %}
+      <h1 class="h1 topic-title">{{ page.title }}</h1>
+      {% if page.header.subtitle %}
+        <p class="body topic-subtitle">{{ page.header.subtitle }}</p>
+      {% endif %}
+    </div>
+  </header>
+
+  <main class="container-site topic-layout">
+    <div class="topic-main">
+      {{ page.content|raw }}
+    </div>
+
+    <aside class="topic-aside">
+      <div class="topic-card">
+        <h2 class="h3">Другие полезные страницы</h2>
+        <div class="topic-links">
+          {% for tp in all_topic_pages %}
+            {% if tp.slug != page.slug %}
+              <a href="{{ base_url_relative }}/{{ tp.slug }}/">{{ tp.label }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  {% include 'partials/sections/cta.html.twig' %}
+{% endblock %}

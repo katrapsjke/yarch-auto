@@ -1,0 +1,13 @@
+name: Yarch Auto AI
+slug: yarch
+type: theme
+version: 1.0.0
+description: Custom theme for yarch-auto-ai import landing page
+icon: star
+author:
+  name: Yarch Auto AI
+homepage: https://example.com
+keywords: yarch, auto, import, russia
+
+grav:
+  version: '>=1.7.0'

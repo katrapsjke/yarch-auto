@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /cache/
+Disallow: /bin/
+Disallow: /system/
+Disallow: /vendor/
+
+Sitemap: https://example.com/sitemap.xml

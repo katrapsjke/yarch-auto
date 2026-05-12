@@ -1,0 +1,23 @@
+home:
+  alias: /home
+
+pages:
+  theme: yarch
+
+languages:
+  supported: [ru]
+  default_lang: ru
+
+cache:
+  enabled: true
+  check:
+    method: file
+
+debugger:
+  enabled: false
+
+errors:
+  display: false
+
+uri:
+  trailing_slash: true

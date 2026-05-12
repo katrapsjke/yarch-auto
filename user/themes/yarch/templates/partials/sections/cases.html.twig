@@ -1,0 +1,151 @@
+<!-- ===== SECTION: CASES ===== -->
+<section class="section section-cases" id="cases">
+  <div class="container-site">
+
+    <div class="cases-header">
+      <div class="cases-header__content">
+        <h2 class="h2">
+          Кейсы: сколько стоит <span class="text-gradient">импорт авто под ключ</span>
+        </h2>
+        <p class="body cases-header__subtitle">
+          Показываем реальные сделки с цифрами: цена авто в РФ, итоговая стоимость импорта и фактическая экономия клиента
+        </p>
+      </div>
+
+      <div class="cases-nav">
+        <button class="cases-nav__btn cases-nav__btn--prev" aria-label="Предыдущий кейс">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="cases-nav__btn cases-nav__btn--next" aria-label="Следующий кейс">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="cases-carousel">
+      <div class="cases-carousel__grid">
+
+        {% set cases = [
+          {
+            country: 'Из Кореи',
+            flag: 'korea-flag.svg',
+            car_name: 'Kia K5 2022',
+            image: 'sections/cases/images/kia_k5.jpg',
+            price_russia: '3 200 000 ₽',
+            price_brought: '2 450 000 ₽',
+            savings: '750 000 ₽',
+            mileage: '38 000 км',
+            delivery_time: '5 недель',
+          },
+          {
+            country: 'Из США',
+            flag: 'usa-flag.svg',
+            car_name: 'BMW 5 Series 2021',
+            image: 'sections/cases/images/bmw_5_series.png',
+            price_russia: '5 800 000 ₽',
+            price_brought: '4 600 000 ₽',
+            savings: '1 200 000 ₽',
+            mileage: '52 000 км',
+            delivery_time: '6 недель',
+          },
+          {
+            country: 'Из Китая',
+            flag: 'china-flag.svg',
+            car_name: 'Toyota Camry 2023',
+            image: 'sections/cases/images/toyota_camry.png',
+            price_russia: '3 900 000 ₽',
+            price_brought: '3 050 000 ₽',
+            savings: '850 000 ₽',
+            mileage: '12 000 км',
+            delivery_time: '4 недели',
+          },
+        ] %}
+
+        {% for case in cases %}
+        <article class="case-card">
+          <div class="case-card__header">
+            <div class="case-badge">
+              <img class="case-badge__icon" src="{{ url('theme://images/' ~ case.flag) }}" alt="">
+              <span class="case-badge__text">{{ case.country }}</span>
+            </div>
+          </div>
+
+          <div class="case-card__image">
+            <img src="{{ url('theme://' ~ case.image) }}" alt="{{ case.car_name }}" loading="lazy">
+          </div>
+
+          <div class="case-card__body">
+            <h3 class="case-card__title">{{ case.car_name }}</h3>
+
+            <div class="case-card__pricing">
+              <div class="pricing-row">
+                <div class="pricing-item">
+                  <span class="pricing-label">Цена в России</span>
+                  <span class="pricing-value">{{ case.price_russia }}</span>
+                </div>
+                <div class="pricing-item">
+                  <span class="pricing-label">Под ключ</span>
+                  <span class="pricing-value">{{ case.price_brought }}</span>
+                </div>
+                <div class="pricing-item">
+                  <span class="pricing-label">Экономия</span>
+                  <span class="pricing-value pricing-value--savings">{{ case.savings }}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="case-card__specs">
+              <div class="spec-item">
+                <img src="{{ url('theme://images/odometer.svg') }}" alt="">
+                <div class="spec-item__content">
+                  <span class="spec-label">Пробег</span>
+                  <span class="spec-value">{{ case.mileage }}</span>
+                </div>
+              </div>
+              <div class="spec-item">
+                <img src="{{ url('theme://images/calendar.svg') }}" alt="">
+                <div class="spec-item__content">
+                  <span class="spec-label">Срок поставки</span>
+                  <span class="spec-value">{{ case.delivery_time }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+
+      </div>
+    </div>
+
+    <div class="cases-cta">
+      <div class="cases-cta__content">
+        <div class="cases-cta__icon" aria-hidden="true">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="28" stroke="#9747FF" stroke-width="2" opacity="0.2"/>
+            <path d="M24 36h16M28 28h8M26 44h12" stroke="#9747FF" stroke-width="2.4" stroke-linecap="round"/>
+            <circle cx="32" cy="20" r="3" stroke="#9747FF" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="cases-cta__text">
+          <h3 class="cases-cta__title">Хотите так же?</h3>
+          <p class="cases-cta__subtitle">
+            Подберём автомобиль под ваш бюджет и рассчитаем честную стоимость импорта до начала сделки
+          </p>
+        </div>
+      </div>
+
+      <a href="#cta" class="btn-primary cases-cta__btn">
+        Рассчитать стоимость под ключ
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- ===== /SECTION: CASES ===== -->

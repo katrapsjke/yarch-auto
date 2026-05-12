@@ -1,0 +1,29 @@
+{% set nav_links = [
+  {href: '/',                          label: 'Главная'},
+  {href: '/stoimost-importa-avto/',    label: 'Стоимость'},
+  {href: '/sroki-dostavki-avto/',      label: 'Сроки доставки'},
+  {href: '/rastamozhka-avto-dokumenty/', label: 'Растаможка'},
+  {href: '/avto-iz-korei/',            label: 'Корея'},
+  {href: '/avto-iz-kitaya/',           label: 'Китай'},
+  {href: '/avto-iz-ssha/',             label: 'США'},
+] %}
+
+<header class="site-header">
+  <div class="container-site site-header__inner">
+    <a class="site-header__logo" href="{{ base_url_relative }}/">Импорт авто под ключ</a>
+
+    <nav class="site-header__nav" aria-label="Основная навигация">
+      {% for link in nav_links %}
+        {% set link_route = link.href == '/' ? '/' : ('/' ~ link.href|trim('/')) %}
+        {% set is_active = page.route == link_route %}
+        <a
+          class="site-header__nav-link{{ is_active ? ' is-active' : '' }}"
+          href="{{ base_url_relative }}{{ link.href }}"
+          {{ is_active ? 'aria-current="page"' : '' }}
+        >{{ link.label }}</a>
+      {% endfor %}
+    </nav>
+
+    <a class="site-header__cta btn-primary" href="{{ base_url_relative }}/#cta">Рассчитать стоимость</a>
+  </div>
+</header>

@@ -1,0 +1,18 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block head %}
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Импорт авто под ключ в Россию","url":"{{ base_url_absolute }}/","inLanguage":"ru-RU"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Импорт авто под ключ в Россию","url":"{{ base_url_absolute }}/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Импорт авто в Россию под ключ","description":"Подбор и проверка авто, покупка на аукционах и у дилеров, доставка, растаможка и передача автомобиля в России.","areaServed":{"@type":"Country","name":"Russia"},"provider":{"@type":"Organization","name":"Импорт авто под ключ в Россию","url":"{{ base_url_absolute }}/"} }</script>
+{% endblock %}
+
+{% block content %}
+  {% include 'partials/sections/hero.html.twig' %}
+  {% include 'partials/sections/pain.html.twig' %}
+  {% include 'partials/sections/solution.html.twig' %}
+  {% include 'partials/sections/cases.html.twig' %}
+  {% include 'partials/sections/countries.html.twig' %}
+  {% include 'partials/sections/seo-section.html.twig' %}
+  {% include 'partials/sections/faq.html.twig' %}
+  {% include 'partials/sections/cta.html.twig' %}
+{% endblock %}
