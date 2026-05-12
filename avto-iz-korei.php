@@ -29,6 +29,7 @@ $breadcrumbs = [
     <link rel="stylesheet" href="css/typography,css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
     <link rel="stylesheet" href="css/topic-pages.css" />
     <?php
     $breadcrumbSchema = ['@context' => 'https://schema.org', '@type' => 'BreadcrumbList', 'itemListElement' => []];
